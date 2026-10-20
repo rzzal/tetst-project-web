@@ -1,25 +1,27 @@
- body {
-    background-color: #FFFFE0; /* Warna kuning cerah */
-    font-family: Arial, sans-serif; /* Jenis huruf yang bersih dan mudah dibaca */
-    color: #191970; /* Warna teks utama (Biru Gelap) */
+body {
+    background-color: #FFFFE0; 
+    font-family: Arial, sans-serif; 
+    color: #191970; 
 }
 
 .kartu-profil {
     width: 300px;
-    margin: 50px auto; /* 50px jarak atas/bawah, auto menengahkan kiri/kanan */
+    margin: 50px auto; 
     padding: 20px;
     background-color: white;
-    border-radius: 15px; /* Membuat sudut menjadi melengkung */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Efek bayangan */
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    text-align: center; /* Pindahkan text-align kesini supaya gabung */
 }
 
+/* Aturan untuk gambar di dalam kartu profil */
 .kartu-profil img {
-    <img src="https://imgur.com/a/OttqirK" alt="NIKI">
-    width: 150px;
-    border-radius: 50%; /* Trik untuk membuat gambar persegi menjadi lingkaran sempurna */
-}
-
-.kartu-profil {
-    /* ... (kode dari slide sebelumnya) ... */
-    text-align: center; /* Menengahkan semua teks di dalam kartu */
+    width: 150px;       /* Lebar gambar */
+    height: 150px;      /* Tinggi gambar (opsional tapi disarankan biar bulat sempurna) */
+    object-fit: cover;  /* Memastikan foto tidak gepeng saat dibuat lingkaran */
+    border-radius: 50%; /* Membuat jadi lingkaran */
+    
+    /* Tambahan opsional agar rapi */
+    display: block;     
+    margin: 0 auto 15px auto; /* Jarak bawah antara foto dan nama */
 }
