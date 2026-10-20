@@ -1,4 +1,4 @@
-body {
+ body {
     background-color: #FFFFE0; /* Warna kuning cerah */
     font-family: Arial, sans-serif; /* Jenis huruf yang bersih dan mudah dibaca */
     color: #191970; /* Warna teks utama (Biru Gelap) */
@@ -14,6 +14,7 @@ body {
 }
 
 .kartu-profil img {
+    <img src="https://imgur.com/a/OttqirK" alt="NIKI">
     width: 150px;
     border-radius: 50%; /* Trik untuk membuat gambar persegi menjadi lingkaran sempurna */
 }
@@ -22,3 +23,7 @@ body {
     /* ... (kode dari slide sebelumnya) ... */
     text-align: center; /* Menengahkan semua teks di dalam kartu */
 }
+
+
+    <img src="https://imgur.com/a/OttqirK" alt="NIKI">
+    
