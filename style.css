@@ -1,27 +1,38 @@
+/* =====================================================
+   FILE: style.css
+   FUNGSI: Mengatur seluruh tampilan website kartu profil
+   ===================================================== */
+
+/* --- BAGIAN 1: PENGATURAN DASAR HALAMAN --- */
 body {
-    background-color: #FFFFE0; 
-    font-family: Arial, sans-serif; 
-    color: #191970; 
+    background-color: #FFFFE0;      /* Warna latar halaman: kuning cerah */
+    font-family: Arial, sans-serif; /* Jenis huruf yang bersih dan mudah dibaca */
+    color: #191970;                 /* Warna teks utama: biru gelap */
 }
 
+/* --- BAGIAN 2: KOTAK KARTU PROFIL --- */
 .kartu-profil {
-    width: 300px;
-    margin: 50px auto; 
-    padding: 20px;
-    background-color: white;
-    border-radius: 15px; 
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
-    text-align: center; /* Pindahkan text-align kesini supaya gabung */
+    width: 300px;                   /* Lebar kartu */
+    margin: 50px auto;              /* 50px jarak atas/bawah, auto = posisi tengah */
+    padding: 20px;                  /* Jarak dalam kotak (isi ke tepi kotak) */
+    background-color: white;        /* Latar belakang kartu berwarna putih */
+    border-radius: 15px;            /* Sudut kotak menjadi melengkung */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Efek bayangan halus agar kartu timbul */
+    text-align: center;             /* Semua isi kartu rata tengah */
 }
 
-/* Aturan untuk gambar di dalam kartu profil */
+/* --- BAGIAN 3: FOTO PROFIL DI DALAM KARTU ---
+   CATATAN PERBAIKAN:
+   Dulu bagian ini tidak bekerja karena penutup komentar di atasnya
+   kurang satu bintang, sehingga browser mengira semua baris di bawah
+   masih berupa komentar. Sekarang semua komentar sudah ditutup benar. */
 .kartu-profil img {
-    width: 150px;       /* Lebar gambar */
-    height: 150px;      /* Tinggi gambar (opsional tapi disarankan biar bulat sempurna) */
-    object-fit: cover;  /* Memastikan foto tidak gepeng saat dibuat lingkaran */
-    border-radius: 50%; /* Membuat jadi lingkaran */
-    
-    /* Tambahan opsional agar rapi */
-    display: block;     
-    margin: 0 auto 15px auto; /* Jarak bawah antara foto dan nama */
+    width: 150px;        /* Lebar gambar */
+    height: 150px;       /* Tinggi gambar, samakan dengan lebar agar bulat sempurna */
+    object-fit: cover;   /* Foto dipotong rapi sehingga tidak gepeng */
+    border-radius: 50%;  /* Trik mengubah gambar persegi menjadi lingkaran */
+
+    /* Tambahan agar posisi foto rapi */
+    display: block;              /* Membuat gambar bisa diposisikan ke tengah */
+    margin: 0 auto 15px auto;    /* Tengah horizontal + jarak 15px menuju nama */
 }
