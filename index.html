@@ -1,15 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-      <title>Profil Saya</title> 
-  <link rel="stylesheet" href="style.css">
+    <!-- Memberitahu browser ini dokumen HTML5 -->
+    <meta charset="UTF-8">
+    <!-- Agar tampilan menyesuaikan lebar layar HP maupun laptop -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Judul yang muncul di tab browser -->
+    <title>Profil Saya</title>
+
+    <!-- Menghubungkan halaman ini dengan file CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Kotak kartu profil yang berada di tengah halaman -->
     <div class="kartu-profil">
-        <img src=".jpg" alt="Foto profil saya">
+
+        <!-- FOTO PROFIL
+             PENTING: ganti "foto-profil.jpg" dengan nama file foto kamu
+             yang sebenarnya, contoh: src="delvano.jpg"
+             File foto wajib berada di folder yang sama dengan index.html -->
+        <img src="foto-profil.jpg" alt="Foto profil saya">
+
+        <!-- Nama lengkap pemilik profil -->
         <h1>Delvano Afrizal A.S</h1>
+
+        <!-- Deskripsi singkat tentang kamu -->
         <p>Siswa SMK yang tertarik dengan teknologi dan desain. Selamat datang di website pertama saya!</p>
-        <a href="https://www.instagram.com/ryzzephyr?cplk=MWF2ZzVkN2M5ZDVsZg%3D%3D">Instagram Saya</a>
+
+        <!-- Link Instagram, target="_blank" agar terbuka di tab baru -->
+        <a href="https://www.instagram.com/ryzzephyr?cplk=MWF2ZzVkN2M5ZDVsZg%3D%3D" target="_blank">Instagram Saya</a>
+
+        <!-- Tombol yang akan dikendalikan oleh JavaScript -->
         <button id="sapaButton">Sapa saya!</button>
+
     </div>
+
+    <!-- Memanggil file JavaScript.
+         Diletakkan paling bawah agar semua elemen HTML terbaca lebih dulu -->
+    <script src="script.js"></script>
+
+</body>
+</html>
